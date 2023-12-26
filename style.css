@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: #212121;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px solid;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin: 10px 0;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0.5em;
+    column-gap: 1em;
+}
+.error{
+    display: none;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+.details{
+    display: none;
+}
+#cityName{
+    height: 40px;
+    width: 250px;
+    border-radius: 0.25em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#searchCity{
+    height:40px;
+    width: 80px;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: 0;
+    background-color: #3e7ae2;
+    color: white;
+    transition: 0.2s all ease-in;
+    font-family:monospace;
+}
+#searchCity:hover{
+    background-color: #0947b3;
+    transform: scale(1.2,1.2);
+}
+.city-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+#country{
+    font-size: 12px;
+    position: relative;
+    top:7px;
+    font-family: 'Nunito', sans-serif;
+}
+.weather-info{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    column-gap: 6rem;
+    width: 100%;
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+    background: #99adef;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+.weather-info:hover{
+    background-color: #687EFF;
+    color: white;
+}
+#weather-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#temperature{
+    font-size: 3rem;
+}
+.fl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+}
+#icon{
+    height: 50px;
+    width: 50px;
+}
+.others-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.humidity-area,.wind-area,.pressure-area{
+    display: flex;
+    justify-content: space-between;
+    align-content:center;
+    width: 100%;
+    margin: 1em 0;
+    background-color: #EEF5FF;
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+    transition: 0.3s all ease-in-out;
+    font-family: 'Nunito', sans-serif;
+}
+.humidity-area:hover,.wind-area:hover,.pressure-area:hover{
+    background-color: #98E4FF;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.humid-icon,.wind-icon,.pressure-icon{
+    height: 20px;
+    width: 20px;
+}
+.humid-icon{
+    position:relative;
+    right: 20px;
+}
+.wind-icon{
+    position: relative;
+    right: 8px;
+}
+.pressure-icon{
+    position: relative;
+    right: 18px;
+}
+.disclaimer{
+    color: white;
+}

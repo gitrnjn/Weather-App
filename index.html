@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" id="cityName" placeholder="Enter City Name"/>
+        <button class="button" id="searchCity">Search</button>
+      </div>
+      <div class="error">
+        <h3>Invalid City Name</h3>
+      </div>
+      <div class="details">
+        <div class="city-details">
+            <h1 id="city"></h1>
+            <pre id="country"></pre>
+          </div>
+          <div class="weather-info">
+            <div class="weather-icon">
+              <img src="" alt="Weather Icon" id="icon" />
+              <div class="description-box">
+                <h3 id="description"></h3>
+              </div>
+            </div>
+            <div class="temperature-box">
+              <h1 id="temperature"></h1>
+              <div class="fl">
+                <pre>Feels like </pre>
+                <p id="feelslike"></p>
+              </div>
+            </div>
+          </div>
+          <div class="others-content">
+            <div class="humidity-area">
+              <div class="content">
+                <img src="img/humidity.png" class="humid-icon" />
+                <h5>Humidity</h5>
+              </div>
+              <div id="content-value">
+                <h2 id="val-data-humid"></h2>
+              </div>
+            </div>
+            <div class="wind-area">
+              <div class="content">
+                <img src="img/humidity.png" class="wind-icon" />
+                <h5>Wind</h5>
+              </div>
+              <div id="content-value">
+                <h2 id="val-data-wind"></h2>
+              </div>
+            </div>
+            <div class="pressure-area">
+              <div class="content">
+                <img src="img/pressure.png" class="pressure-icon" />
+                <h5>Pressure</h5>
+              </div>
+              <div id="content-value">
+                <h2 id="val-data-pressure"></h2>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="disclaimer"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
